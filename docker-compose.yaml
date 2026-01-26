@@ -1,0 +1,9 @@
+services:
+  ros2:
+    image: ros2:latest
+    container_name: ros2
+    tty: true
+    stdin_open: true
+    command: bash
+    volumes:
+      - ./workspace:/workspace
