@@ -1,0 +1,33 @@
+[0.016s] Invoking command in '/workspace/build/astra_camera': /usr/bin/cmake /workspace/src/dependencies/ros_astra_camera -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/workspace/install/astra_camera
+[0.090s] -- The C compiler identification is GNU 11.4.0
+[0.187s] -- The CXX compiler identification is GNU 11.4.0
+[0.196s] -- Detecting C compiler ABI info
+[0.288s] -- Detecting C compiler ABI info - done
+[0.297s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.297s] -- Detecting C compile features
+[0.298s] -- Detecting C compile features - done
+[0.303s] -- Detecting CXX compiler ABI info
+[0.392s] -- Detecting CXX compiler ABI info - done
+[0.400s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.400s] -- Detecting CXX compile features
+[0.401s] -- Detecting CXX compile features - done
+[0.418s] [31mCMake Error at CMakeLists.txt:16 (find_package):
+[0.418s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.419s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.419s]   CMake did not find one.
+[0.421s] 
+[0.422s]   Could not find a package configuration file provided by "catkin" with any
+[0.423s]   of the following names:
+[0.423s] 
+[0.424s]     catkinConfig.cmake
+[0.424s]     catkin-config.cmake
+[0.425s] 
+[0.425s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.425s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.425s]   provides a separate development package or SDK, be sure it has been
+[0.425s]   installed.
+[0.425s] 
+[0.426s] [0m
+[0.426s] -- Configuring incomplete, errors occurred!
+[0.426s] See also "/workspace/build/astra_camera/CMakeFiles/CMakeOutput.log".
+[0.426s] Invoked command in '/workspace/build/astra_camera' returned '1': /usr/bin/cmake /workspace/src/dependencies/ros_astra_camera -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/workspace/install/astra_camera

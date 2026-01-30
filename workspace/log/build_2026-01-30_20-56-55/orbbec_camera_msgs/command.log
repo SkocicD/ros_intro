@@ -1,0 +1,6 @@
+Invoking command in '/workspace/build/orbbec_camera_msgs': CMAKE_PREFIX_PATH=/workspace/install/octane:/opt/ros/humble /usr/bin/cmake /workspace/src/dependencies/OrbbecSDK_ROS2/orbbec_camera_msgs -DCMAKE_INSTALL_PREFIX=/workspace/install/orbbec_camera_msgs
+Invoked command in '/workspace/build/orbbec_camera_msgs' returned '0': CMAKE_PREFIX_PATH=/workspace/install/octane:/opt/ros/humble /usr/bin/cmake /workspace/src/dependencies/OrbbecSDK_ROS2/orbbec_camera_msgs -DCMAKE_INSTALL_PREFIX=/workspace/install/orbbec_camera_msgs
+Invoking command in '/workspace/build/orbbec_camera_msgs': CMAKE_PREFIX_PATH=/workspace/install/octane:/opt/ros/humble /usr/bin/cmake --build /workspace/build/orbbec_camera_msgs -- -j10 -l10
+Invoked command in '/workspace/build/orbbec_camera_msgs' returned '0': CMAKE_PREFIX_PATH=/workspace/install/octane:/opt/ros/humble /usr/bin/cmake --build /workspace/build/orbbec_camera_msgs -- -j10 -l10
+Invoking command in '/workspace/build/orbbec_camera_msgs': CMAKE_PREFIX_PATH=/workspace/install/octane:/opt/ros/humble /usr/bin/cmake --install /workspace/build/orbbec_camera_msgs
+Invoked command in '/workspace/build/orbbec_camera_msgs' returned '0': CMAKE_PREFIX_PATH=/workspace/install/octane:/opt/ros/humble /usr/bin/cmake --install /workspace/build/orbbec_camera_msgs

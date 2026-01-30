@@ -1,0 +1,5 @@
+[0.000000] (-) TimerEvent: {}
+[0.000217] (-) JobUnselected: {'identifier': 'astra_camera'}
+[0.000281] (-) JobUnselected: {'identifier': 'octane'}
+[0.000386] (-) JobUnselected: {'identifier': 'octane_perception'}
+[0.000489] (-) EventReactorShutdown: {}

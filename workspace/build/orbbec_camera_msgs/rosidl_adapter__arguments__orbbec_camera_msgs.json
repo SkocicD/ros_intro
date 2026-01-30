@@ -1,0 +1,22 @@
+{
+  "package_name": "orbbec_camera_msgs",
+  "non_idl_tuples": [
+    "/workspace/src/dependencies/OrbbecSDK_ROS2/orbbec_camera_msgs:msg/DeviceInfo.msg",
+    "/workspace/src/dependencies/OrbbecSDK_ROS2/orbbec_camera_msgs:msg/DeviceStatus.msg",
+    "/workspace/src/dependencies/OrbbecSDK_ROS2/orbbec_camera_msgs:msg/Extrinsics.msg",
+    "/workspace/src/dependencies/OrbbecSDK_ROS2/orbbec_camera_msgs:msg/Metadata.msg",
+    "/workspace/src/dependencies/OrbbecSDK_ROS2/orbbec_camera_msgs:msg/IMUInfo.msg",
+    "/workspace/src/dependencies/OrbbecSDK_ROS2/orbbec_camera_msgs:msg/RGBD.msg",
+    "/workspace/src/dependencies/OrbbecSDK_ROS2/orbbec_camera_msgs:srv/GetBool.srv",
+    "/workspace/src/dependencies/OrbbecSDK_ROS2/orbbec_camera_msgs:srv/GetDeviceInfo.srv",
+    "/workspace/src/dependencies/OrbbecSDK_ROS2/orbbec_camera_msgs:srv/GetCameraInfo.srv",
+    "/workspace/src/dependencies/OrbbecSDK_ROS2/orbbec_camera_msgs:srv/GetInt32.srv",
+    "/workspace/src/dependencies/OrbbecSDK_ROS2/orbbec_camera_msgs:srv/GetString.srv",
+    "/workspace/src/dependencies/OrbbecSDK_ROS2/orbbec_camera_msgs:srv/SetFilter.srv",
+    "/workspace/src/dependencies/OrbbecSDK_ROS2/orbbec_camera_msgs:srv/SetInt32.srv",
+    "/workspace/src/dependencies/OrbbecSDK_ROS2/orbbec_camera_msgs:srv/SetString.srv",
+    "/workspace/src/dependencies/OrbbecSDK_ROS2/orbbec_camera_msgs:srv/SetArrays.srv",
+    "/workspace/src/dependencies/OrbbecSDK_ROS2/orbbec_camera_msgs:srv/GetUserCalibParams.srv",
+    "/workspace/src/dependencies/OrbbecSDK_ROS2/orbbec_camera_msgs:srv/SetUserCalibParams.srv"
+  ]
+}
