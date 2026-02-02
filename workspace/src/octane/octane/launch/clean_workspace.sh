@@ -29,6 +29,11 @@ if [ -d "log" ]; then
     rm -rf log
 fi
 
+if [ -d "src/build" ]; then
+    echo "Removing src/build/"
+    rm -rf src/build
+fi
+
 echo ""
 echo "[OK] Workspace cleaned"
 echo "Run './launch_system.sh' to rebuild and launch"

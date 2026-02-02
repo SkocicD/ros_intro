@@ -15,7 +15,7 @@ echo ""
 # Clean workspace
 echo "=== Cleaning Workspace ==="
 cd "${WORKSPACE_ROOT}"
-rm -rf build install log
+rm -rf build install log src/build
 echo "[OK] Workspace cleaned"
 echo ""
 
