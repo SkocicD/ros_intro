@@ -21,6 +21,8 @@ apt-get install -y \
   libgflags-dev \
   nlohmann-json3-dev \
   libgoogle-glog-dev \
-  libssl-dev
+  libssl-dev \
+  python3-flask \
+  python3-opencv
 
 echo "[OK] Perception dependencies installed"

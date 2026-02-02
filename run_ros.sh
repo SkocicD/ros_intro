@@ -1,1 +1,1 @@
-docker compose run --rm ros2
+docker compose up -d && ./exec_ros.sh

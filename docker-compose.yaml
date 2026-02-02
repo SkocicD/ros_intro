@@ -1,9 +1,17 @@
 services:
   ros2:
+    build:
+      context: ./docker_setup
+      dockerfile: Dockerfile
     image: ros2:latest
     container_name: ros2
     tty: true
     stdin_open: true
     command: bash
+    ports:
+      - "8000:5000"
     volumes:
       - ./workspace:/workspace
+    devices:
+      - /dev/bus/usb:/dev/bus/usb
+    privileged: true

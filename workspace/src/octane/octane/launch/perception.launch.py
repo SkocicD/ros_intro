@@ -24,9 +24,17 @@ def generate_launch_description():
         output='screen',
     )
 
+    camera_viewer_node = Node(
+        package='octane_perception',
+        executable='camera_viewer_node',
+        name='camera_viewer_node',
+        output='screen',
+    )
+
     return LaunchDescription([
         LogInfo(msg='Starting perception subsystem'),
         astra_launch,
         astra_depth_node,
+        camera_viewer_node,
         LogInfo(msg='Perception subsystem online'),
     ])

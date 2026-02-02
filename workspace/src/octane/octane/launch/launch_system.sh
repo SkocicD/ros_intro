@@ -12,30 +12,15 @@ echo "=== Starting Octane System ==="
 echo "Workspace: ${WORKSPACE_ROOT}"
 echo ""
 
-# Clean workspace
-echo "=== Cleaning Workspace ==="
-cd "${WORKSPACE_ROOT}"
-rm -rf build install log src/build
-echo "[OK] Workspace cleaned"
-echo ""
-
-# Build required packages
-echo "=== Building Packages ==="
-cd "${WORKSPACE_ROOT}"
-
-# System Package
-    # octane
-# Perception packages: 
-    # orbbec_camera_msgs
-    # orbbec_camera
-    # octane_perception
-MAKEFLAGS="-j2" colcon build --packages-select \
-    orbbec_camera_msgs orbbec_camera octane_perception \
-    octane \
-    --parallel-workers 1
-
-echo "[OK] Packages built"
-echo ""
+# Check if workspace is built (check for both install dir and a key package)
+if [ ! -d "${WORKSPACE_ROOT}/install" ] || [ ! -d "${WORKSPACE_ROOT}/install/octane" ]; then
+    echo "=== No build found, building system ==="
+    "${SCRIPT_DIR}/build_system.sh"
+    echo ""
+else
+    echo "[OK] Using existing build"
+    echo ""
+fi
 
 # Source ROS2 and workspace
 if [ -f "${WORKSPACE_ROOT}/install/setup.bash" ]; then
