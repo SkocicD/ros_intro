@@ -1,9 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.002075] (-) JobUnselected: {'identifier': 'octane'}
-[0.002190] (-) JobUnselected: {'identifier': 'octane_perception'}
-[0.002423] (-) JobUnselected: {'identifier': 'orbbec_camera_msgs'}
-[0.003545] (-) JobUnselected: {'identifier': 'orbbec_description'}
-[0.003675] (orbbec_camera) JobQueued: {'identifier': 'orbbec_camera', 'dependencies': OrderedDict([('orbbec_camera_msgs', '/workspace/install/orbbec_camera_msgs')])}
-[0.003795] (orbbec_camera) JobStarted: {'identifier': 'orbbec_camera'}
-[0.020664] (orbbec_camera) JobEnded: {'identifier': 'orbbec_camera', 'rc': 1}
-[0.032089] (-) EventReactorShutdown: {}

@@ -1,0 +1,28 @@
+[0.545s] Invoking command in '/workspace/src/octane': PYTHONPATH=/workspace/src/build/octane/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/src/install/octane/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/octane build --build-base /workspace/src/build/octane/build install --record /workspace/src/build/octane/install.log --single-version-externally-managed install_data
+[0.684s] running egg_info
+[0.685s] creating ../build/octane/octane.egg-info
+[0.685s] writing ../build/octane/octane.egg-info/PKG-INFO
+[0.687s] writing dependency_links to ../build/octane/octane.egg-info/dependency_links.txt
+[0.689s] writing entry points to ../build/octane/octane.egg-info/entry_points.txt
+[0.690s] writing requirements to ../build/octane/octane.egg-info/requires.txt
+[0.690s] writing top-level names to ../build/octane/octane.egg-info/top_level.txt
+[0.690s] writing manifest file '../build/octane/octane.egg-info/SOURCES.txt'
+[0.693s] reading manifest file '../build/octane/octane.egg-info/SOURCES.txt'
+[0.696s] writing manifest file '../build/octane/octane.egg-info/SOURCES.txt'
+[0.698s] running build
+[0.698s] running build_py
+[0.700s] creating /workspace/src/build/octane/build
+[0.701s] creating /workspace/src/build/octane/build/lib
+[0.703s] creating /workspace/src/build/octane/build/lib/octane
+[0.703s] copying octane/__init__.py -> /workspace/src/build/octane/build/lib/octane
+[0.704s] running install
+[0.705s] running install_lib
+[0.707s] creating /workspace/src/install/octane/lib/python3.10/site-packages/octane
+[0.708s] copying /workspace/src/build/octane/build/lib/octane/__init__.py -> /workspace/src/install/octane/lib/python3.10/site-packages/octane
+[0.709s] byte-compiling /workspace/src/install/octane/lib/python3.10/site-packages/octane/__init__.py to __init__.cpython-310.pyc
+[0.711s] running install_data
+[0.711s] creating /workspace/src/install/octane/share/ament_index
+[0.712s] creating /workspace/src/install/octane/share/ament_index/resource_index
+[0.712s] creating /workspace/src/install/octane/share/ament_index/resource_index/packages
+[0.713s] error: can't copy 'resource/octane': doesn't exist or not a regular file
+[0.726s] Invoked command in '/workspace/src/octane' returned '1': PYTHONPATH=/workspace/src/build/octane/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/src/install/octane/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/octane build --build-base /workspace/src/build/octane/build install --record /workspace/src/build/octane/install.log --single-version-externally-managed install_data

@@ -1,0 +1,26 @@
+running egg_info
+creating ../build/octane/octane.egg-info
+writing ../build/octane/octane.egg-info/PKG-INFO
+writing dependency_links to ../build/octane/octane.egg-info/dependency_links.txt
+writing entry points to ../build/octane/octane.egg-info/entry_points.txt
+writing requirements to ../build/octane/octane.egg-info/requires.txt
+writing top-level names to ../build/octane/octane.egg-info/top_level.txt
+writing manifest file '../build/octane/octane.egg-info/SOURCES.txt'
+reading manifest file '../build/octane/octane.egg-info/SOURCES.txt'
+writing manifest file '../build/octane/octane.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /workspace/src/build/octane/build
+creating /workspace/src/build/octane/build/lib
+creating /workspace/src/build/octane/build/lib/octane
+copying octane/__init__.py -> /workspace/src/build/octane/build/lib/octane
+running install
+running install_lib
+creating /workspace/src/install/octane/lib/python3.10/site-packages/octane
+copying /workspace/src/build/octane/build/lib/octane/__init__.py -> /workspace/src/install/octane/lib/python3.10/site-packages/octane
+byte-compiling /workspace/src/install/octane/lib/python3.10/site-packages/octane/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /workspace/src/install/octane/share/ament_index
+creating /workspace/src/install/octane/share/ament_index/resource_index
+creating /workspace/src/install/octane/share/ament_index/resource_index/packages
+error: can't copy 'resource/octane': doesn't exist or not a regular file

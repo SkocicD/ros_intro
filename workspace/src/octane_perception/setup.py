@@ -24,6 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'astra_depth_node = octane_perception.nodes.astra_depth_node:main',
         ],
     },
 )

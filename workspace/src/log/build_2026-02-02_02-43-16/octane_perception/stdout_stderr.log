@@ -1,0 +1,32 @@
+running egg_info
+creating ../build/octane_perception/octane_perception.egg-info
+writing ../build/octane_perception/octane_perception.egg-info/PKG-INFO
+writing dependency_links to ../build/octane_perception/octane_perception.egg-info/dependency_links.txt
+writing entry points to ../build/octane_perception/octane_perception.egg-info/entry_points.txt
+writing requirements to ../build/octane_perception/octane_perception.egg-info/requires.txt
+writing top-level names to ../build/octane_perception/octane_perception.egg-info/top_level.txt
+writing manifest file '../build/octane_perception/octane_perception.egg-info/SOURCES.txt'
+reading manifest file '../build/octane_perception/octane_perception.egg-info/SOURCES.txt'
+writing manifest file '../build/octane_perception/octane_perception.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /workspace/src/build/octane_perception/build
+creating /workspace/src/build/octane_perception/build/lib
+creating /workspace/src/build/octane_perception/build/lib/octane_perception
+copying octane_perception/__init__.py -> /workspace/src/build/octane_perception/build/lib/octane_perception
+running install
+running install_lib
+creating /workspace/src/install/octane_perception/lib/python3.10/site-packages/octane_perception
+copying /workspace/src/build/octane_perception/build/lib/octane_perception/__init__.py -> /workspace/src/install/octane_perception/lib/python3.10/site-packages/octane_perception
+byte-compiling /workspace/src/install/octane_perception/lib/python3.10/site-packages/octane_perception/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /workspace/src/install/octane_perception/share/ament_index
+creating /workspace/src/install/octane_perception/share/ament_index/resource_index
+creating /workspace/src/install/octane_perception/share/ament_index/resource_index/packages
+copying resource/octane_perception -> /workspace/src/install/octane_perception/share/ament_index/resource_index/packages
+copying package.xml -> /workspace/src/install/octane_perception/share/octane_perception
+running install_egg_info
+Copying ../build/octane_perception/octane_perception.egg-info to /workspace/src/install/octane_perception/lib/python3.10/site-packages/octane_perception-0.0.0-py3.10.egg-info
+running install_scripts
+Installing astra_depth_node script to /workspace/src/install/octane_perception/lib/octane_perception
+writing list of installed files to '/workspace/src/build/octane_perception/install.log'

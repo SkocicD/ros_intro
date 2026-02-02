@@ -1,0 +1,18 @@
+# System-level configuration for Octane robot
+
+system:
+  robot_name: "octane"
+  launch_timeout: 30.0  # seconds
+
+# Subsystem enable/disable flags
+subsystems:
+  perception:
+    enabled: true
+  navigation:
+    enabled: false  # TODO: Enable when navigation package is ready
+  localization:
+    enabled: false  # TODO: Enable when localization package is ready
+  control:
+    enabled: false  # TODO: Enable when control package is ready
+  teleoperation:
+    enabled: false  # TODO: Enable when teleoperation package is ready
