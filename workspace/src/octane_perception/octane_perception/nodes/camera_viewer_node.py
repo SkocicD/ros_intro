@@ -49,17 +49,25 @@ class CameraViewerNode(Node):
         """Receive depth images"""
         try:
             self.depth_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='passthrough')
-            self.last_depth_time = time.time()
+            # Validate image dimensions
+            if self.depth_image is not None and self.depth_image.shape[0] > 0 and self.depth_image.shape[1] > 0:
+                self.last_depth_time = time.time()
+            else:
+                self.get_logger().warn('Received invalid depth image dimensions', throttle_duration_sec=5.0)
         except Exception as e:
-            self.get_logger().error(f'Failed to convert depth image: {e}')
+            self.get_logger().error(f'Failed to convert depth image: {e}', throttle_duration_sec=5.0)
 
     def color_callback(self, msg):
         """Receive color images"""
         try:
             self.color_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
-            self.last_color_time = time.time()
+            # Validate image dimensions
+            if self.color_image is not None and self.color_image.shape[0] > 0 and self.color_image.shape[1] > 0:
+                self.last_color_time = time.time()
+            else:
+                self.get_logger().warn('Received invalid color image dimensions', throttle_duration_sec=5.0)
         except Exception as e:
-            self.get_logger().error(f'Failed to convert color image: {e}')
+            self.get_logger().error(f'Failed to convert color image: {e}', throttle_duration_sec=5.0)
 
     def start_web_server(self):
         """Start Flask web server in background thread"""
@@ -205,12 +213,25 @@ class CameraViewerNode(Node):
             color_display = self.create_status_image(w, h, "Waiting for camera...")
 
         if depth_active and self.depth_image is not None:
-            # Normalize depth for visualization
-            depth_normalized = cv2.normalize(self.depth_image, None, 0, 255, cv2.NORM_MINMAX)
-            depth_display = cv2.applyColorMap(depth_normalized.astype(np.uint8), cv2.COLORMAP_JET)
-            h_d, w_d = depth_display.shape[:2]
-            # Resize to match color image height
-            depth_display = cv2.resize(depth_display, (int(w_d * h / h_d), h))
+            try:
+                # Normalize depth for visualization
+                depth_normalized = cv2.normalize(self.depth_image, None, 0, 255, cv2.NORM_MINMAX)
+                depth_display = cv2.applyColorMap(depth_normalized.astype(np.uint8), cv2.COLORMAP_JET)
+                h_d, w_d = depth_display.shape[:2]
+
+                # Sanity check dimensions before resize
+                if h_d > 0 and w_d > 0 and h > 0:
+                    # Resize to match color image height if needed
+                    if h_d != h:
+                        scale = h / h_d
+                        new_w = int(w_d * scale)
+                        depth_display = cv2.resize(depth_display, (new_w, h))
+                else:
+                    # Invalid dimensions, use placeholder
+                    depth_display = self.create_status_image(w, h, "Invalid depth data")
+            except Exception as e:
+                self.get_logger().error(f'Error processing depth image: {e}')
+                depth_display = self.create_status_image(w, h, "Depth processing error")
         else:
             depth_display = self.create_status_image(w, h, "Waiting for camera...")
 

@@ -26,6 +26,7 @@ setup(
         'console_scripts': [
             'astra_depth_node = octane_perception.nodes.astra_depth_node:main',
             'camera_viewer_node = octane_perception.nodes.camera_viewer_node:main',
+            'usb_bridge_camera_node = octane_perception.nodes.usb_bridge_camera_node:main',
         ],
     },
 )
