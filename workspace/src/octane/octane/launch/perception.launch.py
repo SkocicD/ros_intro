@@ -13,7 +13,7 @@ def generate_launch_description():
     # Declare launch argument for USB bridge mode
     use_usb_bridge_arg = DeclareLaunchArgument(
         'use_usb_bridge',
-        default_value='false',
+        default_value='true',
         description='Use USB bridge for Mac development (true/false)'
     )
 
@@ -58,12 +58,8 @@ def generate_launch_description():
     # Perception Nodes
     # ========================================
 
-    camera_viewer_node = Node(
-        package='octane_perception',
-        executable='camera_viewer_node',
-        name='camera_viewer_node',
-        output='screen',
-    )
+    # NOTE: Camera viewer removed - use ROS visualization tools instead
+    # Use rqt_image_view or rviz2 to view camera feeds via VNC
 
     return LaunchDescription([
         use_usb_bridge_arg,
@@ -73,9 +69,6 @@ def generate_launch_description():
         astra_launch,
         astra_depth_node,
         usb_bridge_node,
-
-        # Perception nodes
-        camera_viewer_node,
 
         LogInfo(msg='Perception subsystem online'),
     ])

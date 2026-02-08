@@ -10,6 +10,7 @@ services:
     command: bash
     ports:
       - "8000:5000"
+      - "5901:5901"
     volumes:
       - ./workspace:/workspace
     devices:
