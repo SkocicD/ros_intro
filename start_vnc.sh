@@ -16,5 +16,8 @@ echo ""
 echo "========================================="
 echo ""
 
-# Start VNC server (not in background)
-docker exec -it ros2 bash -c "vncserver :1 -geometry 1920x1080 -depth 24 -fg"
+# Kill any existing VNC server first
+docker exec ros2 bash -c "vncserver -kill :1 2>/dev/null || true"
+
+# Start VNC server with localhost disabled (allows external connections)
+docker exec -it ros2 bash -c "vncserver :1 -geometry 1920x1080 -depth 24 -localhost=0 -fg"

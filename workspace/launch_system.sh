@@ -6,7 +6,7 @@
 set -e
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-WORKSPACE_ROOT="$(cd "${SCRIPT_DIR}/../../../.." && pwd)"
+WORKSPACE_ROOT="${SCRIPT_DIR}"
 
 echo "=== Starting Octane System ==="
 echo "Workspace: ${WORKSPACE_ROOT}"
@@ -15,7 +15,7 @@ echo ""
 # Check if workspace is built (check for both install dir and a key package)
 if [ ! -d "${WORKSPACE_ROOT}/install" ] || [ ! -d "${WORKSPACE_ROOT}/install/octane" ]; then
     echo "=== No build found, building system ==="
-    "${SCRIPT_DIR}/build_system.sh"
+    "${WORKSPACE_ROOT}/build_system.sh"
     echo ""
 else
     echo "[OK] Using existing build"
